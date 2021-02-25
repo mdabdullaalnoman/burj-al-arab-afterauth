@@ -6,7 +6,7 @@ const Bookings = () => {
     const [booking, setBooking] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:4200/bookings?email=' + loggedInUser.email, {
+        fetch('https://still-shore-81542.herokuapp.com/bookings?email=' + loggedInUser.email, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',

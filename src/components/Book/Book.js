@@ -34,7 +34,7 @@ const Book = () => {
   const handleBooking = () => {
     const bookingInfo = { ...selectedDate, ...loggedInUser };
     console.log(bookingInfo);
-    fetch('http://localhost:4200/oneBooking', {
+    fetch('https://still-shore-81542.herokuapp.com/oneBooking', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(bookingInfo)
