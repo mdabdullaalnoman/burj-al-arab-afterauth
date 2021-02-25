@@ -1,0 +1,29 @@
+.login-container{
+    border: 1px solid gray;
+    width:40%;
+    margin:auto;
+    padding:40px 60px;
+    border-radius:10px;
+    background:gainsboro;
+}
+.login-container h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.login-container button{
+    width:100%;
+    border: 1px solid gray;
+    border-radius: 20px;
+    background:white;
+    margin-top: 40px;
+    font-size:20px;
+    font-weight:bold;
+}
+.login-container button:hover{
+    background:rgba(9, 199, 9, 0.795);
+    transition:.9s;
+}
+@media only screen and (max-width: 600px) {
+    .login-container{
+        width:100%;
+    }
+  }

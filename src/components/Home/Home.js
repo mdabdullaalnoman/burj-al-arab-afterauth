@@ -2,11 +2,7 @@ import React from 'react';
 import Room from '../Room/Room';
 
 const Home = () => {
-    const style = {
-        display: 'flex',
-        margin: '40px',
-        justifyContent: 'space-between'
-    }
+
     const rooms = [
         {
             title: 'Standard Single Room',
@@ -40,10 +36,14 @@ const Home = () => {
         }
     ]
     return (
-        <div style={style}>
-            {
-                rooms.map(room => <Room key={room.bedType} room={room}></Room>)
-            }
+        <div className="container">
+            <p className="text-center">
+                <div className="row">
+                    {
+                        rooms.map(room => <Room key={room.bedType} room={room}></Room>)
+                    }
+                </div>
+            </p>
         </div>
     );
 };

@@ -20,7 +20,13 @@ const Bookings = () => {
         <div style={{textAlign:'center'}}>
             <h1> I Have {booking.length} bookings</h1>
             {
-                booking.map(bookInfo => <ul><li>{bookInfo.name} {bookInfo.email} {(new Date(bookInfo.checkInDate).toDateString('dd/MM/yyyy'))}</li></ul>)
+                booking.map(bookInfo => (
+                    <div style={{textAlign:'center', padding:'10px' , color:'white', background:'black', margin:'10px'}}>
+                        <h3>{bookInfo.name}</h3>
+                        <h2>{bookInfo.email} </h2>
+                        <p>{(new Date(bookInfo.checkInDate).toDateString('dd/MM/yyyy'))}</p>
+                    </div>
+                ))
             }
         </div>
     );
